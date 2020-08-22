@@ -138,7 +138,7 @@ cmd> git restore a
 
 3. How do you "undo" a commit?  What is the command to move the "head" of the current branch to the **previous** commit?
 ```
-cmd> git checkout 
+cmd> git checkout HEAD~1
 ```
 
 ## Part 4. Branch and Merge
