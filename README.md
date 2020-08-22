@@ -176,7 +176,7 @@ test/
 8. Consider this situation:
    - you have a local repository including a README.md file.
    - Your local repo is up-to-date with a remote Github repo (has identical README.md)
-   - You edit README.md on Github using Github's web interface and save the changes.
+   - You edit README.md on Github using Github's web interface gtand save the changes.
    - On your local machine, you edit README.md, commit the changes and push it to Github.    
    What happens when you push?    
    Explain why.
