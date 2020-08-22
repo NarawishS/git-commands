@@ -1,19 +1,5 @@
 ## Using Git
 
-> 1. Answer these questions using Markdown.  
-> 2. Delete these instructions.    
-> 3. Check that your formatting is correct (points deducted if incorrect).  VS Code and IntelliJ have markdown previewers.
-> 4. Optional: For your own reference you may optionally do the following:
->    * Divide this file into separate Markdown files for each section, and put a link to each file in README.md.
->    * Add additional sections or questions to the end for things you'd like to remember.
-
-> To display your answers as lines of *unformatted text* (like HTML `<pre>` tag) there are 2 ways to do it:
-> - leave 4 spaces at start of the line (and the text on the line must not "look like" a Markdown numbered or bulleted item)
-> - put the lines between triple backquotes (as in the source code for this file):    
-    ```
-    unformatted text
-    ```
-
 ## Part 1. Basics
 
 1. When working with Git locally, what are these?  Describe each one in a sentence
@@ -60,29 +46,29 @@ test/
 
 1. What is the command to add README and *everything* in the `src` directory to the git staging area?
 
-```
-cmd> git add README
-cmd> git add src
-```
+    ```
+    cmd> git add README
+    cmd> git add src
+    ```
 
 2. Write the command to add `test/d` to the staging area.
-```
-cmd> git add test/d
-```
+    ```
+    cmd> git add test/d
+    ```
 
 3. Write a command to list files in the staging area.
-```
-cmd> git status
-```
+    ```
+    cmd> git status
+    ```
 4. You decide you **don't** want to add `test/d` to git.  Write the command to remove `test/d` from the staging area.
-```
-cmd> git reset test/d
-```
+    ```
+    cmd> git reset test/d
+    ```
 
 5. Write the command to commit the staging area to the repository.
-```
-cmd> git commit
-```
+    ```
+    cmd> git commit
+    ```
 
 6. You **never** want any files in the `out/` directory to be commited to git. Describe 2 steps to configure git for this:
     * step one
@@ -126,38 +112,42 @@ cmd> git commit
 ## Part 3. Undoing Changes
 
 1. Use an editor to make some changes to file `a`.  What is the command to view the **differences** between your working copy `a` and the current version in repository?
-```
-cmd> git diff HEAD <sorce>
-```
+    ```
+    cmd> git diff HEAD <sorce>
+    ```
 
 2. You decide you don't like the changes to `a`. What is the command to **replace** your working copy of `a` with the current version in the repository?    
     (This also works if you accidentally *delete* a file from your working copy.)
-```
-cmd> git restore a
-```
+    ```
+    cmd> git restore a
+    ```
 
 3. How do you "undo" a commit?  What is the command to move the "head" of the current branch to the **previous** commit?
-```
-cmd> git checkout HEAD~1
-```
+    ```
+    cmd> git checkout HEAD~1
+    ```
 
 ## Part 4. Branch and Merge
 
 1. What is the command to create a new branch named `dev-food`?
-
- 
+    ```
+    cmd> git branch dev-food
+    ```
 
 2. What is the command to print what your current branch is?
-
-
+    ```
+    cmd> git status
+    ```
 
 3. What command to list **all** branches including remote ones?
-
-
+    ```
+    cmd> git branch -a
+    ```
 
 4. What is command to switch your working copy to a branch named `dev-food`?
-
-
+    ```
+    cmd> git checkout dev-food
+    ```
 
 5. You commit some files to `dev-food` and try to "push" them to Github, but it fails:
 
@@ -167,13 +157,20 @@ cmd> git checkout HEAD~1
     fatal:  The current branch dev-food has no upstream branch. 
     ```
     Explain this error.
+    ```
+    The current branch didn't set the remote as upstream.
+    ```
 
 6. What is the command to push `dev-food` to `origin` as a new remote branch on `origin`?
-
-
+    ```
+    cmd> git push --set-upstream origin dev-food
+    ```
 
 7. Suppose your remote repository (Github or `origin`) has a branch named `beverages` that you don't have in your local repository.  What is the command to create a new local branch as a copy of the remote `beverages` branch that **tracks** the remote branch?
     There are many commands that do this.  For your own reference you may want to write several.
+    ```
+    cmd> git fetch
+    ```
 
 
 8. Consider this situation:
