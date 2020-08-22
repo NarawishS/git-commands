@@ -170,6 +170,7 @@ test/
     There are many commands that do this.  For your own reference you may want to write several.
     ```
     cmd> git fetch
+    cmd> git pull
     ```
 
 
@@ -181,9 +182,9 @@ test/
    What happens when you push?    
    Explain why.
     ```
-    maybe?
+    your push was reject.
+    this happen because you make change to your remote with counterpart branch and then git request you to update it.
     ```
-
 
 ## Viewing Changes and Commits
 
