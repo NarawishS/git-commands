@@ -85,6 +85,10 @@ test/
 
 7. What is the command to move `a`, `b`, and `c` from the `src` directory to the top-level directory of the project, so that they are also moved in the git repository?
     ```
+    cmd> cd src
+    cmd> git mv a b c ..
+
+    cmd> git mv src/a src/b src/c .
     cmd> git mv [<option>] <sorce>... <destination>
     ```
 
