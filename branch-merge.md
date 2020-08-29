@@ -37,26 +37,6 @@
     cmd> git push --set-upstream origin dev-food
     ```
 
-7. Suppose your remote repository (Github or `origin`) has a branch named `beverages` that you don't have in your local repository.  What is the command to create a new local branch as a copy of the remote `beverages` branch that **tracks** the remote branch?
-    There are many commands that do this.  For your own reference you may want to write several.
-    ```
-    cmd> git fetch
-    cmd> git pull
-    ```
-
-
-8. Consider this situation:
-   - you have a local repository including a README.md file.
-   - Your local repo is up-to-date with a remote Github repo (has identical README.md)
-   - You edit README.md on Github using Github's web interface gtand save the changes.
-   - On your local machine, you edit README.md, commit the changes and push it to Github.    
-   What happens when you push?    
-   Explain why.
-    ```
-    your push was reject.
-    this happen because you make change to your remote with counterpart branch and then git request you to update it.
-    ```
-
 ## Viewing Changes and Commits
 
 * Command to show the history of a repository in the terminal (command) window.  This form shows one line per commit, with a graph, and all branches.
