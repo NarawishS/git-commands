@@ -2,6 +2,8 @@
 
 1. Use an editor to make some changes to file `a`.  What is the command to view the **differences** between your working copy `a` and the current version in repository?
     ```
+    cmd> git diff HEAD a
+
     cmd> git diff HEAD <sorce>
     ```
 

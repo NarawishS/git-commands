@@ -1,7 +1,13 @@
 ## Part 5. Commands for Remotes
 1. The command to list all your remote repositories, with their URL.
+    ```
+    cmd> git remote -v
+    ```
 
-2. The command to view details about a rempote repo named origin, including all the remote banches, and local tracking branches.
+2. The command to view details about a remote repo named origin, including all the remote banches, and local tracking branches.
+    ```
+    cmd> git remote show origin
+    ```
 
 3. Suppose your remote repository (Github or `origin`) has a branch named `beverages` that you don't have in your local repository.  What is the command to create a new local branch as a copy of the remote `beverages` branch that **tracks** the remote branch?
     There are many commands that do this.  For your own reference you may want to write several.
@@ -23,5 +29,11 @@
     ```
 
 5. What are the steps to resolve the problem in the previous problem?
+    ```
+    cmd> git pull
+    ```
 
 6. Suppose you want to move origin to a different URL. This can happen if you change the name of a repo on Github, or transfer ownership from one person to another. What is the command to change the URL for origin to https://github.com/your_name/newrepo.
+    ```
+    cmd> git set-url origin https://github.com/your_name/newrepo
+    ```

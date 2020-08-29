@@ -56,7 +56,10 @@ test/
     cmd> cd src
     cmd> git mv a b c ..
 
+    or
+    
     cmd> git mv src/a src/b src/c .
+
     cmd> git mv [<option>] <sorce>... <destination>
     ```
 
